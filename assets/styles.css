@@ -1,15 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-   
         --color-primary: #18599C;
-        --font-family-primary: Roboto;
+        --font-family-primary:"Roboto", sans-serif;
         --font-family-secondary: Aclonica;
-      
-    
     }
+    body{
+        background-color: #fff;
+    }
+    /**************gallery****************/
+    .title1 h2{
+        color:#18599C;
+        font-weight: bold;
+        text-align: center;
+        font-size: 12pt;
+        font-family:var(--font-family-secondary);
+    }
+    .gallery p{
+        text-align: center;
+        font-size: 10pt;
+    }
+    .imag-contact{
+       
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        height: 150px;
+        top: 20px; 
+    }
+    .imag-contact img{
+        width: 65px;
+        height: 100px; 
+        border: solid 5pt #CDC7C7;
+        border-radius: 200pt;
+       
+    }
+    .imag-contact .image1{
+        position: relative;
+        top: 15px;
+    }
+    .imag-contact .image3{
+        position: relative;
+        top: 15px;
+    }
+    /**************contact**************************/
+    .title2 h3{
+        text-align: center;
+        color: #18599C;
+        font-size: 35px;
+    }
+    .reach{
+        font-size: 16.66pt;
+        font-size: medium;
+        margin-left: 13pt;
+        margin-top: 23pt ;
+        margin-bottom: 23pt;
+    }
+    form{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: start;
+        
+    }
+    label{
+        align-self: flex-start;
+        text-align: start;
+        margin-left: 13pt;
+    }
+    input{
+        width: 95.937%;
+        height: 56px;
+        border-radius: 5.52px;
+        background-color: #D8D7D7;
+        border: none;
+        padding-left: 13px;
+    }
+    input:hover{
+        background-color: #f9f8f8;
+    }
+    textarea{
+        width: 95.937%;
+        height: 175px;
+        background-color: #D8D7D7;
+        border-radius: 5.52px;
+        border: none;
+        padding: 13px;
+    }
+    textarea:hover{
+        background-color: #f9f8f8;
+    }
+    .boton-submit input{
+        width: 200px;
+        height: 56px;
+        background-color: #D14A37;
+        border-radius: 56px;
+        margin-top: 27pt;
+    }
+    .boton-submit input:hover{
+        background-color: #ff1e00;
+
+    }
+
+
+    
+    
