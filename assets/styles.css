@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: aldrich;
+    src: url(../font/Aldrich-Regular.ttf);
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,57 +17,77 @@
     }
     /**************gallery****************/
     .title1 h2{
-        color:#18599C;
-        font-weight: bold;
+        color: #18599C;
+        font-size: 13pt;
         text-align: center;
-        font-size: 12pt;
-        font-family:var(--font-family-secondary);
+        font-family:  aldrich;
+        
     }
     .gallery p{
-        text-align: center;
-        font-size: 10pt;
+        font-weight: 600;
+        font-family:  aldrich;;
     }
-    .imag-contact{
-       
+    .gallery{
         display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        height: 150px;
-        top: 20px; 
+       flex-direction: column;
+       align-items: center;
+       position: relative;
     }
-    .imag-contact img{
-        width: 65px;
-        height: 100px; 
-        border: solid 5pt #CDC7C7;
-        border-radius: 200pt;
+    .imag-gallery-phone{
+        width: 92.81vw;
+        height: 95vw;
+        text-align: center;
+    }
+     img{
        
+        position: absolute;
     }
-    .imag-contact .image1{
-        position: relative;
-        top: 15px;
+    .image1{
+        width: 51.45%;
+        height: 54.2%;
+        top: 80px;
+        left: 24%;  
     }
-    .imag-contact .image3{
-        position: relative;
-        top: 15px;
+    .image2{
+        width: 40.78%;
+        height: 64.3%;
+        bottom: -38px;
+        left: 57%;
+    }
+    .image3{
+        width: 38.4%;
+        height: auto;
+        bottom: 16px;
+        left: 4%;
+    }
+    .image4{
+        width: 46.71%;
+        height: 29.65%;
+        left: -1px;
     }
     /**************contact**************************/
     .title2 h3{
         text-align: center;
         color: #18599C;
         font-size: 35px;
+        margin-top: 10vw;
+        font-family:  aldrich;
     }
     .reach{
         font-size: 16.66pt;
+        font-weight: 700;
         font-size: medium;
         margin-left: 13pt;
-        margin-top: 23pt ;
-        margin-bottom: 23pt;
+        margin-top: 10pt ;
+        margin-bottom: 5pt;   
+        font-family:  aldrich;
     }
     form{
         display: flex;
         flex-flow: column;
         align-items: center;
         text-align: start;
+        font-family:  aldrich;
         
     }
     label{
@@ -74,8 +96,8 @@
         margin-left: 13pt;
     }
     input{
-        width: 95.937%;
-        height: 56px;
+        width: 90%;
+        height: 40px;
         border-radius: 5.52px;
         background-color: #D8D7D7;
         border: none;
@@ -85,8 +107,8 @@
         background-color: #f9f8f8;
     }
     textarea{
-        width: 95.937%;
-        height: 175px;
+        width: 90%;
+        height: 150px;
         background-color: #D8D7D7;
         border-radius: 5.52px;
         border: none;
@@ -96,17 +118,25 @@
         background-color: #f9f8f8;
     }
     .boton-submit input{
-        width: 200px;
-        height: 56px;
+        width: 150px;
+        height: 40px;
         background-color: #D14A37;
-        border-radius: 56px;
-        margin-top: 27pt;
+        border-radius: 36px;
+        margin-top: 15pt 0;
+        color: #fff;
+        font-size: 15pt;
+        font-weight: 700;
+        text-align: center;
+        font-family:  aldrich;
     }
     .boton-submit input:hover{
-        background-color: #ff1e00;
-
+        background-color: #18599C;
     }
+        
+    /*************media*****************************/
+    @media (min-width:100px) {
 
 
-    
+        
+    }
     
