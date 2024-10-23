@@ -9,12 +9,17 @@
 @font-face {
     font-family: Montserrat;
     src: url(./fonts/Montserrat-ExtraBold.ttf);
-}    
+} 
+@font-face {
+    font-family: Aclonica;
+    src: url(./fonts/Aclonica-Regular.ttf);
+}   
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -38,9 +43,13 @@ nav{
     width: 95vw;
     display: flex;
     justify-content: space-between;
+    backdrop-filter: blur(10px);
+    border-radius: 20%;
     align-items: center;
     padding: 0 5px;
     margin-top: 10px;
+    position: fixed;
+    z-index: 9999;
 }
 .menu{
     width: 70%;
@@ -54,6 +63,7 @@ nav{
     justify-content: space-around;
     gap:10px;
     font-family: var(--font-family-primary);
+    width: 100%;
 }
 .menu ul li:hover{
     color: var(--color-primary);
@@ -77,6 +87,7 @@ nav{
 a{
     text-decoration: none;
     color: black;
+    width: max-content
 }
 nav img{
     margin: 0;
@@ -129,21 +140,40 @@ nav img{
     
     }
     .sidebar{
+        position: relative;
        transition: translate 200ms ease-in-out;
-       translate: 100% ;
+       translate: 104% ;
        position: fixed;
        top:-44px;
        right: 0px;
        padding: 0.5rem 1rem;
        margin-top: 100px;
-       background-color: rgb(255, 255, 255);
-       max-width: 15rem;
-       min-height: 100%;
+       background-image: url(./image/sidebgsvg.svg);
+       background-size: cover;
+       background-repeat: no-repeat;
        display: flex;
        flex-flow: column;
        gap:5px;
        align-items: center;
+       justify-content: center;
+       width: 100%;
+       height: 100vH;
+       font-family: Aclonica;
+       color: var(--color-primary);
+       font-size: 38pt;
       
+    }
+    .sidebar img{
+        position: absolute;
+        width: 25%;
+    }
+    .starR{
+        bottom: 65px;
+        right: 0;
+    }
+    .starL{
+        bottom: 65px;
+        left: 0;
     }
     .berger_menu:has(input:checked) + .sidebar{
        translate: 0%;
@@ -202,6 +232,7 @@ top: -26px;
 
 .labling{
     text-align: center;
+    margin-top: 50px;
 }
 .labling h1{
     font-family: Aldrich ;
@@ -279,26 +310,67 @@ width: 12%;
     text-align: center;
     
 }
-.squad_brnd{
-    width: 100%;
-    position: relative;
+
+
+
+
+#our_roles{
+    margin-top: 38px;
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
 }
-.squad_brnd h1{
-    position: absolute;
-    font-family: Montserrat;
+#our_roles h1{
+    font-family: Aldrich;
     color: var(--color-primary);
-    bottom: 35%;
-    left: 32%;
 }
-.squad_brnd p{
-    position: absolute;
-    font-family: Montserrat;
-    bottom: 25%;
-    left: 36%;
+.roles_cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(311px,1fr));
+}
+
+.s1titel{
+    text-align: center;
+    width: 50%;
+}
+.role_card h1{
+    color: var(--color-primary);
+}
+.role_card p{
+    font-size: medium;
+}
+.role_card img{
+    width: 50%;
+}
+.role_card{
+    margin: 34px 10px;
+    padding: 5px 0;
+    font-family: Aldrich;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.stats{
+    font-family: aldrich;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.stats1{
+    width: 120px;
+    height: 52px;
+}
+}
+.stats1 p:first-of-type{
+    background-color: #F4F4F4;
+    border-radius: 31px;
+    color: var(--color-primary);
+}
+.stats1 p:last-of-type{
+    font-size: 10pt;
 }
 
 
