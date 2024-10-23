@@ -1,10 +1,22 @@
+@font-face {
+    font-family: Roboto ;
+    src: url(./fonts/Roboto-Italic.ttf);
+}
+@font-face {
+    font-family: Aldrich ;
+    src: url(./fonts/Aldrich-Regular.ttf);
+} 
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+}    
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
    
         --color-primary: #18599C;
@@ -12,4 +24,287 @@
         --font-family-secondary: Aclonica;
       
     
+    }
+body{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column ;
+    height: 100vh;
+
+}
+nav{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 10px;
+}
+.menu{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+    font-family: var(--font-family-primary);
+}
+.menu ul li:hover{
+    color: var(--color-primary);
+}
+
+#lang{
+    border-radius: 40%;
+    color: white;
+    border: solid var(--color-primary);
+    background-color: var(--color-primary);
+}
+.lang_berg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.lang_berg p{
+    font-family: var(--font-family-primary);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav img{
+    margin: 0;
+    padding: 0;
+}
+.checked{
+    display: flex;
+    font-family: var(--font-family-primary);
+
+ }
+.checked a:hover{
+    color: var(--color-primary);
+ }
+ .checked a:visited{
+    border: 2px solid var(--color-primary);
+ }
+ .berger_menu{
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+    width: max-content;
+    z-index: 2;
+    cursor: pointer;
+       
+    }
+    .berger_menu::before,
+    .berger_menu::after,
+    .berger_menu input{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: var(--color-primary);
+    border-radius: 9999px;
+    transition: opacity 200ms ease-in-out;
+    
+    
+    }
+    .berger_menu input{
+       appearance: none;
+       padding: 0;
+       margin: 0;
+       outline: none;
+       pointer-events: none;
+    }
+    .berger_menu:has(input:checked)::before,
+    .berger_menu:has(input:checked)::after,
+    .berger_menu input:checked{
+       background-color: var(--color-primary);
+    
+    
+    }
+    .sidebar{
+       transition: translate 200ms ease-in-out;
+       translate: 100% ;
+       position: fixed;
+       top:-44px;
+       right: 0px;
+       padding: 0.5rem 1rem;
+       margin-top: 100px;
+       background-color: rgb(255, 255, 255);
+       max-width: 15rem;
+       min-height: 100%;
+       display: flex;
+       flex-flow: column;
+       gap:5px;
+       align-items: center;
+      
+    }
+    .berger_menu:has(input:checked) + .sidebar{
+       translate: 0%;
+    }
+    #landing{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .hero{
+        position: absolute;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        top: 105px;
+        
+}
+.bg{
+  width: 100%;
+  height: auto;
+  position: relative; 
+  right: 0; 
+}
+    .hero img{
+        position: absolute;
+        
+
+    }
+.star{
+width: 68%;
+height: auto;
+z-index: 1;
+top: -26px;
+}
+.cloud{
+    width: 100%;
+    height: auto;
+    left: -151px;
+    top: -87px;
+}
+.cloud2{
+    width: 60%;
+    height: auto;
+    right: 0;
+    top: 0;
+
+}
+.plane{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    top: -28px;
+}
+
+.labling{
+    text-align: center;
+}
+.labling h1{
+    font-family: Aldrich ;
+    color: var(--color-primary);
+}
+.labling p{
+    font-family: Aldrich;
+
+}
+.srv{
+    padding-top: 2%;
+    width: 98%;
+    min-height: 55pt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 29pt 46pt rgba(0, 0, 0, 0.25);
+    border-radius: 10pt;
+}
+.srv .cart{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-family: Montserrat;
+    border-radius: 27.59pt;
+    font-size: 10pt;
+    min-height: 30pt;
+    flex-grow: 1;
+    text-align: center;
+    
+}
+.srv .cart:hover{
+    box-shadow: 0 4pt 4pt rgba(0, 0, 0, 0.25);
+}
+.cart img{
+    width: 16.26pt;
+    height: 14.01pt;
+}
+#about_us{
+    margin-top: 37px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    justify-items: center;
+    align-items: center;
+}
+#about_us .logo{
+width: 100%;
+position: relative;
+
+}
+.description{
+position: relative;
+display: flex;
+justify-content: center;
+
+}
+.description img{
+position: absolute;
+width: 12%;
+}
+.border{
+    top: -26px;
+    right: 0;
+
+}
+.border2{
+    bottom: -26px;
+    left: 0;
+    
+}
+.description p{
+    width: 70%;
+    font-family: Aldrich ;
+    text-align: center;
+    
+}
+.squad_brnd{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.squad_brnd h1{
+    position: absolute;
+    font-family: Montserrat;
+    color: var(--color-primary);
+    bottom: 35%;
+    left: 32%;
+}
+.squad_brnd p{
+    position: absolute;
+    font-family: Montserrat;
+    bottom: 25%;
+    left: 36%;
+}
+
+
+    @media (max-width:817px) {
+        .menu ul{
+            display: none !important;
+        }
+        
     }
