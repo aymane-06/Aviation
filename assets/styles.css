@@ -183,6 +183,7 @@ nav img{
         display: flex;
         flex-flow: column;
         align-items: center;
+        font-size: 3vw;
     }
     .hero{
         position: absolute;
@@ -215,19 +216,21 @@ top: -26px;
     height: auto;
     left: -151px;
     top: -87px;
+    animation: cloud 1.5s ease-in-out 200ms 1 normal none;
 }
 .cloud2{
     width: 60%;
     height: auto;
     right: 0;
     top: 0;
-
+    animation: plane 2s ease-in-out 200ms 1 normal none;
 }
 .plane{
     width: 100%;
     height: auto;
     z-index: 2;
     top: -28px;
+    animation: plane 1.5s ease-in-out 200ms 1 normal none;
 }
 
 .labling{
@@ -252,6 +255,7 @@ top: -26px;
     align-items: center;
     box-shadow: 0 29pt 46pt rgba(0, 0, 0, 0.25);
     border-radius: 10pt;
+    font-size: 1vw;
 }
 .srv .cart{
     display: flex;
@@ -391,4 +395,25 @@ width: 12%;
         .role_card img{
             width: 100%;
         }
+        .description p {
+            font-size: 2vw;
+        }
+    }
+    @keyframes plane {
+        0%{
+            transform: translate(-100px,100px);
+        }
+        100%{
+            top: -28px;
+        }
+        
+    }
+    @keyframes cloud {
+        0%{
+            transform: translate(-100px,100px);
+        }
+        100%{
+             transform: -87px;
+        }
+        
     }
