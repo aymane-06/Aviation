@@ -363,7 +363,7 @@ width: 12%;
     width: 120px;
     height: 52px;
 }
-}
+
 .stats1 p:first-of-type{
     background-color: #F4F4F4;
     border-radius: 31px;
@@ -379,4 +379,16 @@ width: 12%;
             display: none !important;
         }
         
+        
+    }
+    @media (min-width:817px) {
+        .role_card {
+            flex-direction: column;
+        }
+        .midel{
+            flex-direction: column-reverse;
+        }
+        .role_card img{
+            width: 100%;
+        }
     }
