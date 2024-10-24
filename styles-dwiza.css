@@ -1,177 +1,249 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+@font-face {
+  font-family: Aldrich;
+  src: url(./font/Aldrich-Regular.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root{
-   
-        --color-primary: #18599C;
-        --font-family-primary: Roboto;
-        --font-family-secondary: Aclonica;
-    }
-.BG{
-    background-image: url(./images-dwiza/rectangle-blue.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 325px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
-.card{
-    width: 80px;
-    height: 105px;
-     background-color: aliceblue;
-    border-radius: 40%;
+.BG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
 }
-.energie{
- 
-    text-align: center;
+.BG .bg_card {
+  width: 100%;
+  max-height: 865px;
+  position: relative;
 }
-.energie .energies{
-    height: 20px;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: 125%;
 }
-.aviation{
-    margin-top: 90px;
-    text-align: center;
+.card {
+  width: 24%;
+  height: 40%;
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6%;
 }
-.nautic{
- 
-    text-align: center;
+.energie {
+  text-align: center;
+  font-family: aldrich;
 }
-.security{
-    margin-top: 90px;
-    text-align: center;
+.energie:hover {
+  transform: translate(1.1, 1.1);
 }
-.card p{
-    padding-top: 5px;
-    font-size: 6px;
+.aviation {
+  margin-top: 6%;
+  text-align: center;
+  font-family: aldrich;
 }
-.card img{
-    padding-top: 5px;
+.nautic {
+  text-align: center;
+  font-family: aldrich;
 }
-.plane h2{
-    font-size: 20px;
-    color: #18599C;
+.security {
+  margin-top: 6%;
+  text-align: center;
+  font-family: aldrich;
 }
-.background{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-position-y: -80px;
-    background-image: url(./images-dwiza/drapeau.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.3;
+.card h6 {
+  font-size: 1.8vw;
 }
-.plane{
-    position: relative;
+.card p {
+  padding-top: 0;
+  font-size: 1.4vw;
 }
-.list1{
-    display: flex;
-    column-gap: 0px;
+.card img {
+  padding-top: 5px;
+  width: 25%;
 }
-.list1 ul{
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    list-style: none;
-    color: #202020;
+.plane h2 {
+  font-size: 20px;
+  color: #18599c;
+  font-family: aldrich;
 }
-.star{
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    margin-left: 10px;
+.background {
+  position: absolute;
+  width: 100%;
+  height: 170%;
+  z-index: -1;
+  background-position-y: -180px;
+  background-image: url(./images-dwiza/drapeau.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
 }
-.objectif button{
-    padding: 5px 35px;
-    color: white;
-    border-radius: 15px;
-    border: none;
-    background: #D14A37;
-    margin: 10px 40px;
+.plane {
+  position: relative;
 }
-.objectif button:hover{
-    background: #872a1e ;
+.drapeau {
+  display: none;
 }
-.objectif h3{
-    padding: 5px 0 10px 10px;
-    color: #373737;
+.list1 {
+  display: flex;
+  column-gap: 0px;
+  font-family: aldrich;
 }
-.s-title h3{
-    color: #717171;
-    text-align: center;
-    padding-top: 20px;
+.list1 ul {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  list-style: none;
+  color: #202020;
+  margin-left: 5%;
 }
-.s-title .ttl{
-    color: #18599C;
-    font-size: 13pt;
+.list1 li::before {
+  content: url(./icons-dwiza/star.svg);
+  position: relative;
+  left: -20px;
+  top: 23px;
 }
 
-.galerie{
+.objectif button {
+  padding: 5px 35px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  background: #d14a37;
+  margin: 10px 40px;
+  font-family: aldrich;
+}
+.objectif button:hover {
+  background: #872a1e;
+}
+.objectif h3 {
+  padding: 5px 0 10px 10px;
+  color: #373737;
+  font-family: aldrich;
+}
+.s-title {
+  grid-row: 1;
+  font-family: aldrich;
+}
+.s-title h3 {
+  color: #717171;
+  text-align: center;
+  padding-top: 20px;
+}
+.s-title .ttl {
+  color: #18599c;
+  font-size: 13pt;
+}
+.galerie-init {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.galerie {
+  position: relative;
+  width: 80%;
+  max-width: 560px;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+  margin: 25px 0;
+  left: 5%;
+}
+.galerie-1 {
+  position: relative;
+  width: 50%;
+  max-width: 305px;
+}
+
+.galerie-2 {
+  position: absolute;
+  top: 0;
+  left: 49px;
+  width: 28%;
+  max-width: 200px;
+}
+.galerie-3 {
+  position: absolute;
+  width: 30%;
+  bottom: -6px;
+  right: 12%;
+}
+.galerie-4 {
+  position: absolute;
+  bottom: 30px;
+  left: 15%;
+  width: 38%;
+}
+.list ul {
+  list-style-type: circle;
+  list-style-position: outside;
+  color: #696969;
+  font-family: aldrich;
+}
+@media (min-width: 321px) and (max-width: 744px) {
+  .objectif button {
+    padding: 15px 70px;
+    border-radius: 25px;
+    margin: 30px 70px;
+  }
+  .galerie {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 745px) {
+  .background {
+    background-image: none;
+    opacity: 2;
+  }
+  .list1 ul {
+    row-gap: 38px;
+    font-family: aldrich;
+  }
+  .drapeau {
+    display: block;
+    grid-column: 2;
+    grid-row: 2 span;
+    width: 100%;
     position: relative;
-    text-align: center ;
-    margin-top: 20px;
-    height: 220px;
-}
-.galerie-2{
-    position: absolute;
-    top: 0;
-    left: 20%;
-}
-.galerie-3{
-    position: absolute;
-    bottom: 20px;
-    right: 20%;
-}
-.galerie-4{
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-}
-.list ul{
-    list-style-type: circle;
-    list-style-position: outside;
-    color: #696969;
-}
-@media (min-width:321px) and (max-width:744px) {
-    .energie .nautic
-    .aviation .security{
-        text-align: center;
-    }
-    .plane h2{
-        margin: 50px 0 0 60px;
-    }
-    .star img{
-        height: 30px;
-    }
-    .star{
-        row-gap: 85px;
-    }
-    .list1 ul{
-        row-gap: 100px;
-    }
-    .objectif button{
-        padding: 15px 70px;
-        border-radius: 25px;
-        margin: 30px 70px;
-    }
-    .galerie-init{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .galerie{
-        width: 560px;
-        height: 455px;
-    }
-    .galerie img{
-        width: 305px;
-        height: 445px;
-    }
+    bottom: 110px;
+  }
+  .trans {
+    grid-row: 1;
+  }
+  .objectif {
+    grid-row: 2;
+  }
+  .plane {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+  }
+  .objectif button {
+    padding: 15px 70px;
+    border-radius: 25px;
+    margin: 30px 70px;
+  }
+  .galerie-init {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .galerie {
+    grid-row: 2 span;
+    grid-column: 1;
+  }
+  .s-title {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
