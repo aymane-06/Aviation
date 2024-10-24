@@ -12,40 +12,37 @@
     }
 .BG{
     background-image: url(./images-dwiza/rectangle-blue.svg);
-    height: 358px;
-    width: 320px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 .card{
     width: 80px;
     height: 105px;
-    background-color: aliceblue;
-    position: absolute;
+     background-color: aliceblue;
     border-radius: 40%;
 }
 .energie{
-    top:90px;
-    left: 10px;
+ 
     text-align: center;
 }
 .energie .energies{
     height: 20px;
 }
 .aviation{
-    top: 165px;
-    left: 80px;
+    margin-top: 90px;
     text-align: center;
 }
 .nautic{
-    top: 90px;
-    left: 160px;
+ 
     text-align: center;
 }
 .security{
-    top: 165px;
-    right: 10px;
+    margin-top: 90px;
     text-align: center;
 }
 .card p{
@@ -79,14 +76,28 @@
 }
 .list1 ul{
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     list-style: none;
     color: #202020;
 }
 .star{
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 40px;
     margin-left: 10px;
+}
+.objectif button{
+    padding: 5px 35px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background: #D14A37;
+    margin: 10px 40px;
+}
+.objectif button:hover{
+    background: #872a1e ;
 }
 .objectif h3{
     padding: 5px 0 10px 10px;
@@ -101,6 +112,7 @@
     color: #18599C;
     font-size: 13pt;
 }
+
 .galerie{
     position: relative;
     text-align: center ;
@@ -126,4 +138,40 @@
     list-style-type: circle;
     list-style-position: outside;
     color: #696969;
+}
+@media (min-width:321px) and (max-width:744px) {
+    .energie .nautic
+    .aviation .security{
+        text-align: center;
+    }
+    .plane h2{
+        margin: 50px 0 0 60px;
+    }
+    .star img{
+        height: 30px;
+    }
+    .star{
+        row-gap: 85px;
+    }
+    .list1 ul{
+        row-gap: 100px;
+    }
+    .objectif button{
+        padding: 15px 70px;
+        border-radius: 25px;
+        margin: 30px 70px;
+    }
+    .galerie-init{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .galerie{
+        width: 560px;
+        height: 455px;
+    }
+    .galerie img{
+        width: 305px;
+        height: 445px;
+    }
 }
