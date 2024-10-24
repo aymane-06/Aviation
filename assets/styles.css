@@ -163,7 +163,7 @@
             margin-bottom: 30pt;
     }
     .reach{
-        margin-left: 40px;
+        margin-left: 18px;
     }
     .gallery p{
         font-size: 32pt;
@@ -183,12 +183,9 @@
     .form-desktop{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: aqua;
-
+       
     }
-    .form-desktop div{
-        text-align: center;
-    }
+    
     input{
         
         margin: 10px 0px 30px 13px;
@@ -205,6 +202,9 @@
        bottom: 57px;
         position: relative;
        
+    }
+    .title2 h3{
+        text-align: left;
     }
  
 }
