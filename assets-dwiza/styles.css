@@ -1,0 +1,215 @@
+@font-face {
+    font-family: aldrich;
+    src: url(../font/Aldrich-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+        --color-primary: #18599C;
+        --font-family-primary:"Roboto", sans-serif;
+        --font-family-secondary: Aclonica;
+    }
+    body{
+        background-color: #fff;
+    }
+    .content{
+        width: 100%;
+    }
+    /**************gallery****************/
+    .imag-gallery-desktop{
+        display: none;
+    }
+    .form-desktop{
+        display: none;
+    }
+    .title1 h2{
+        color: #18599C;
+        font-size: 13pt;
+        text-align: center;
+        font-family:  aldrich;
+        
+    }
+    .gallery p{
+        font-weight: 600;
+        font-family:  aldrich;;
+    }
+    .gallery{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+    }
+    .imag-gallery-phone{
+        width: 92.81vw;
+        height: 95vw;
+        text-align: center;    
+    }
+     .imag-gallery-phone img{
+       
+        position: absolute;
+    }
+    .image1{
+        width: 51.45%;
+        height: 54.2%;
+        top: 80px;
+        left: 24%;  
+    }
+    .image2{
+        width: 40.78%;
+        height: 64.3%;
+        bottom: -38px;
+        left: 57%;
+    }
+    .image3{
+        width: 38.4%;
+        height: auto;
+        bottom: 16px;
+        left: 4%;
+    }
+    .image4{
+        width: 46.71%;
+        height: 29.65%;
+        left: -1px;
+    }
+    /**************contact**************************/
+    .title2 h3{
+        text-align: center;
+        color: #18599C;
+        font-size: 35px;
+        margin-top: 10vw;
+        font-family:  aldrich;
+    }
+    .reach{
+        font-size: 16.66pt;
+        font-weight: 700;
+        font-size: medium;
+        margin-left: 13pt;
+        margin-top: 10pt ;
+        margin-bottom: 5pt;   
+        font-family:  aldrich;
+    }
+    form{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: start;
+        font-family:  aldrich;
+        
+    }
+    label{
+        align-self: flex-start;
+        text-align: start;
+        margin-left: 13pt;
+    }
+    input{
+        width: 90%;
+        height: 40px;
+        border-radius: 5.52px;
+        background-color: #D8D7D7;
+        border: none;
+        padding-left: 13px;
+    }
+    input:hover{
+        background-color: #f9f8f8;
+    }
+    textarea{
+        width: 90%;
+        height: 150px;
+        background-color: #D8D7D7;
+        border-radius: 5.52px;
+        border: none;
+        padding: 13px;
+    }
+    textarea:hover{
+        background-color: #f9f8f8;
+    }
+    .boton-submit input{
+        width: 150px;
+        height: 40px;
+        background-color: #D14A37;
+        border-radius: 36px;
+        margin-top: 15pt 0;
+        color: #fff;
+        font-size: 15pt;
+        font-weight: 700;
+        text-align: center;
+        font-family:  aldrich;
+    }
+    .boton-submit input:hover{
+        background-color: #18599C;
+    }
+        
+    /*************media*****************************/
+    @media (min-width:1000px) {
+        .imag-gallery-phone{
+            display: none;
+        }
+        .imag-gallery-desktop{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 33.52vw;
+            justify-content: space-evenly;
+        }
+        .imag-gallery-desktop img{
+            height: 30vw;
+           
+        }
+        .title1 h2{
+            color: #18599C;
+            font-size: 30pt;
+            text-align: center;
+            font-family:  aldrich;
+            margin-bottom: 30pt;
+    }
+    .reach{
+        margin-left: 18px;
+    }
+    .gallery p{
+        font-size: 32pt;
+        font-weight: 600;
+        margin-bottom: 68pt;  
+    }
+    .image6 ,.image8{
+        position: relative;
+        top: 45px;   
+    }
+    .title2 {
+        margin-left: 13px;
+    }
+    .form-phon{
+        display: none;
+    }
+    .form-desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    
+    input{
+        
+        margin: 10px 0px 30px 13px;
+    }
+   
+    #attach{
+        margin-bottom: 112px;
+    }
+    textarea{
+        margin: 10px 0px 0px 13px;
+    }
+    .boton-submit input{
+       
+       bottom: 57px;
+        position: relative;
+       
+    }
+    .title2 h3{
+        text-align: left;
+    }
+ 
+}
+
+    
