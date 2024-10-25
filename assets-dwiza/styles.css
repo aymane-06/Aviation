@@ -112,7 +112,7 @@
         border: none;
         padding-left: 13px;
     }
-    input:hover{
+    input :not(.checked):hover{
         background-color: #f9f8f8;
     }
     textarea{
