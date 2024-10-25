@@ -216,14 +216,14 @@ top: -26px;
     height: auto;
     left: -151px;
     top: -87px;
-    animation: cloud 1.5s ease-in-out 200ms 1 normal none;
+    animation: cloud 2s ease-in-out 200ms 1 normal none;
 }
 .cloud2{
     width: 60%;
     height: auto;
     right: 0;
     top: 0;
-    animation: plane 2s ease-in-out 200ms 1 normal none;
+    animation: cloud2 2.5s ease-in-out 200ms 1 normal none;
 }
 .plane{
     width: 100%;
@@ -413,7 +413,15 @@ width: 12%;
             transform: translate(-100px,100px);
         }
         100%{
-             transform: -87px;
+            top: -87px;
         }
         
+    }
+    @keyframes cloud2 {
+        0%{
+            transform: translate(-100px,100px);
+        }
+        100%{
+            top: 0px;
+        }       
     }
