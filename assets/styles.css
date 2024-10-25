@@ -84,11 +84,11 @@ nav{
 .lang_berg p{
     font-family: var(--font-family-primary);
 }
-a{
+.menu ul a,.sidebar a{
     text-decoration: none;
     color: black;
     width: max-content
-}
+} 
 nav img{
     margin: 0;
     padding: 0;
@@ -194,7 +194,7 @@ nav img{
         top: 105px;
         
 }
-.bg{
+.bag{
   width: 100%;
   height: auto;
   position: relative; 
@@ -225,7 +225,7 @@ top: -26px;
     top: 0;
     animation: cloud2 2.5s ease-in-out 200ms 1 normal none;
 }
-.plane{
+.planeS1{
     width: 100%;
     height: auto;
     z-index: 2;
