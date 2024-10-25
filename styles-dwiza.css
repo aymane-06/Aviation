@@ -26,7 +26,8 @@
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  height: 125%;
+  height: fit-content;
+  top: 14%;
 }
 .card {
   width: 24%;

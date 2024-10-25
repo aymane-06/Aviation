@@ -64,6 +64,7 @@ nav{
     gap:10px;
     font-family: var(--font-family-primary);
     width: 100%;
+    margin: 0;
 }
 .menu ul li:hover{
     color: var(--color-primary);
@@ -366,6 +367,7 @@ width: 12%;
 .stats1{
     width: 120px;
     height: 52px;
+    margin: 19px 0;
 }
 
 .stats1 p:first-of-type{
@@ -382,7 +384,9 @@ width: 12%;
         .menu ul{
             display: none !important;
         }
-        
+        aside a{
+            font-size: 2rem;
+        }
         
     }
     @media (min-width:817px) {
