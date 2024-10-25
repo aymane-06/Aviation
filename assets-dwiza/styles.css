@@ -15,6 +15,9 @@
     body{
         background-color: #fff;
     }
+    .content{
+        width: 100%;
+    }
     /**************gallery****************/
     .imag-gallery-desktop{
         display: none;
